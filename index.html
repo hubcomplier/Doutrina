@@ -158,7 +158,7 @@
         .hero-description {
             max-width: 700px;
             font-size: 1.1rem;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.8);
             line-height: 1.8;
             margin-bottom: 50px;
         }
@@ -292,7 +292,7 @@
             max-width: 800px;
             margin: 0 auto;
             font-size: 1.1rem;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.8);
             line-height: 1.8;
         }
 
@@ -331,6 +331,7 @@
             overflow: hidden;
         }
 
+        /* Regras para ícones (se houver algum restante) */
         .course-thumbnail i {
             font-size: 3rem;
             color: var(--gold-primary);
@@ -340,6 +341,18 @@
 
         .course-card:hover .course-thumbnail i {
             opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* REGRAS PARA IMAGENS NOS CARDS */
+        .course-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .course-card:hover .course-thumbnail img {
             transform: scale(1.1);
         }
 
@@ -355,6 +368,7 @@
             letter-spacing: 1px;
             font-weight: 600;
             border-radius: 3px;
+            z-index: 10;
         }
 
         .course-type.workshop { background: #8b5cf6; color: #fff; }
@@ -380,7 +394,7 @@
 
         .course-desc {
             font-size: 0.95rem;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.8);
             line-height: 1.6;
             margin-bottom: 20px;
         }
@@ -429,11 +443,7 @@
             background: rgba(255,255,255,0.1);
             color: rgba(255,255,255,0.5);
             cursor: not-allowed;
-        }
-
-        .course-btn.coming-soon:hover {
-            transform: none;
-            box-shadow: none;
+            pointer-events: none;
         }
 
         /* Single Card Center */
@@ -600,7 +610,7 @@
                 <!-- Curso Akasha -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-fire"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766003273/download_-_2025-12-17T172504.739_ocd5rn.jpg" alt="Akasha Fascinação">
                         <span class="course-type">CURSO</span>
                     </div>
                     <div class="course-info">
@@ -616,7 +626,7 @@
                 <!-- Desafio 7 Dias -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-bolt"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766004473/download_-_2025-12-17T174118.262_egaqea.jpg" alt="Desafio 7 Dias">
                         <span class="course-type desafio">DESAFIO</span>
                     </div>
                     <div class="course-info">
@@ -632,7 +642,7 @@
                 <!-- Masterclass -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-gem"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766004910/download_-_2025-12-17T175350.038_rgq6wn.jpg" alt="Masterclass Fascinação">
                         <span class="course-type masterclass">MASTERCLASS</span>
                     </div>
                     <div class="course-info">
@@ -648,7 +658,7 @@
                 <!-- Ritual para Casais -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-heart"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766005278/download_-_2025-12-17T175853.736_ppe3ws.jpg" alt="Ritual Casais">
                         <span class="course-type ritual">RITUAL</span>
                     </div>
                     <div class="course-info">
@@ -664,7 +674,7 @@
                 <!-- Workshop Tantra -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-yin-yang"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766005756/download_-_2025-12-17T180702.206_tafzrq.jpg" alt="Workshop Tantra">
                         <span class="course-type workshop">WORKSHOP</span>
                     </div>
                     <div class="course-info">
@@ -708,7 +718,7 @@
                 <!-- A Senda Tântrica -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-road"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766007651/download_-_2025-12-17T183811.258_ueliay.jpg" alt="A Senda Tântrica">
                         <span class="course-type">CURSO</span>
                     </div>
                     <div class="course-info">
@@ -724,7 +734,7 @@
                 <!-- Tantra Quântico -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-atom"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766008470/download_-_2025-12-17T185202.806_deqbli.jpg" alt="Tantra Quântico">
                         <span class="course-type">CURSO</span>
                     </div>
                     <div class="course-info">
@@ -740,7 +750,7 @@
                 <!-- Mentoria em Grupo -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-users"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766009473/download_-_2025-12-17T190553.191_mxpxsi.jpg" alt="Magnetismo Tântrico">
                         <span class="course-type mentoria">MENTORIA</span>
                     </div>
                     <div class="course-info">
@@ -756,7 +766,7 @@
                 <!-- Autoestima Blindada -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-shield-alt"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766010526/download_-_2025-12-17T192237.461_dntnaa.jpg" alt="Autoestima Blindada">
                         <span class="course-type programa">PROGRAMA</span>
                     </div>
                     <div class="course-info">
@@ -800,7 +810,7 @@
                 <!-- Paladins -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-crown"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766010823/download_-_2025-12-17T193301.014_k1ia6c.jpg" alt="Paladins">
                         <span class="course-type">CURSO</span>
                     </div>
                     <div class="course-info">
@@ -813,7 +823,7 @@
                     </div>
                 </div>
 
-                <!-- Jornada 90 Dias -->
+                <!-- Jornada 90 Dias (LINK FALTANTE - MANTIDO ICONE) -->
                 <div class="course-card">
                     <div class="course-thumbnail">
                         <i class="fas fa-calendar-alt"></i>
@@ -832,7 +842,7 @@
                 <!-- Mentoria VIP -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-star"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766011242/download_-_2025-12-17T193915.069_stbglt.jpg" alt="Mentoria VIP">
                         <span class="course-type mentoria">MENTORIA VIP</span>
                     </div>
                     <div class="course-info">
@@ -876,7 +886,7 @@
                 <!-- Do Zero ao Zen -->
                 <div class="course-card">
                     <div class="course-thumbnail">
-                        <i class="fas fa-infinity"></i>
+                        <img src="https://res.cloudinary.com/dlueoyrhe/image/upload/v1766011550/download_-_2025-12-17T194418.827_hp0qit.jpg" alt="Do Zero ao Zen">
                         <span class="course-type">ELITE</span>
                     </div>
                     <div class="course-info">
